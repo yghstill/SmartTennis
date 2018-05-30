@@ -165,10 +165,7 @@ if __name__ == '__main__':
                 if key & 0xFF == ord('q'):
                     break
                 continue
-            
-            
-
-            
+           
             im_dim = im_dim.repeat(output.size(0), 1)
             scaling_factor = torch.min(inp_dim/im_dim,1)[0].view(-1,1)
             
