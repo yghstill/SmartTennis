@@ -1,6 +1,7 @@
 from configobj import ConfigObj
 import numpy as np
 
+
 def config_reader():
     config = ConfigObj('src/config')
 
